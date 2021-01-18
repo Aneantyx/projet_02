@@ -1,0 +1,1 @@
+Mon premier projet pour mon parcours de développeur web chez OpenClassrooms qui consiste à reconstituer une maquette de page web en HTML et CSS.
