@@ -9,6 +9,7 @@ body{
 
 
 
+
 /*HEADER*/
 
 header{
@@ -66,6 +67,7 @@ header .inscription{
 
 
 
+
 /*Barre de recherches*/
 
 form{
@@ -87,7 +89,7 @@ form i{
 form #barre_recherche{
 
     height: 100%;
-    width: 245px;
+    width: 220px;
     font-size: 18px;
     font-weight: bold;
     padding-left: 15px;
@@ -106,5 +108,76 @@ form #bouton_recherche{
     font-size: 15px;
     font-weight: bold;
     border-radius: 0 15px 15px 0;
+
+}
+
+
+
+
+/*Filtres*/
+
+#filtres{
+
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+#filtres > p{
+
+    margin-right: 20px;
+    font-weight: bold;
+
+}
+
+#filtres div{
+
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    margin-right: 12px;
+    border: solid 2px rgb(0, 0, 0, 0.1);
+    border-radius: 45px;
+
+}
+
+#filtres i{
+
+    color: #0065FC;
+    background-color: #DEEBFF;
+    padding: 15px;
+    border-radius: 45px;
+    margin: -2px;
+
+}
+
+#filtres div p{
+
+    padding: 12px 15px 12px 12px;
+    margin: 0px;
+    font-weight: bold;
+
+}
+
+
+
+/*Phrase d'accroche*/
+
+#recherches > p:last-child{
+
+    font-size: 15px;
+
+}
+
+#recherches > p:last-child i{
+
+    color: #0065FC;
+    border: rgb(0, 0, 0, 0.1) solid 1px;
+    border-radius: 45px;
+    padding: 5px 9px;
+    margin-right: 5px;
+    font-size: 12px;
 
 }
