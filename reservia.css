@@ -1,11 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
+/*Le corp*/
+
 body{
 
     font-family: 'Raleway', sans-serif;
 
 }
+
+#bloc_page{
+
+    margin: 0px 40px;
+
+}
+
+#recherches h1{
+
+    font-size: 23px;
+
+}
+
+h2{
+
+    font-size: 17px;
+    margin: 0px;
+
+}
+
 
 
 
@@ -16,6 +38,8 @@ header{
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 100px;
 
 }
 
@@ -41,7 +65,8 @@ header li{
 header a{
 
     text-decoration: none;
-    padding: 36px 25px;
+    padding: 47px 27px;
+    font-size: 15px;
 
 }
 
@@ -68,7 +93,13 @@ header .inscription{
 
 
 
-/*Barre de recherches*/
+/*recherches*/
+
+#recherches h1{
+
+    margin: 0px
+
+}
 
 form{
 
@@ -121,7 +152,6 @@ form #bouton_recherche{
     display: flex;
     align-items: center;
     margin-top: 25px;
-    margin-bottom: 25px;
 
 }
 
@@ -168,6 +198,7 @@ form #bouton_recherche{
 #recherches > p:last-child{
 
     font-size: 15px;
+    margin: 25px 0 25px 0;
 
 }
 
@@ -179,5 +210,95 @@ form #bouton_recherche{
     padding: 5px 9px;
     margin-right: 5px;
     font-size: 12px;
+
+}
+
+
+
+
+/*Choix hébergements*/
+
+#choix_hebergements{
+
+    background-color: #F2F2F2;
+    padding: 20px 40px;
+    border-radius: 25px;
+
+}
+
+#choix_hebergements > div{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+
+#choix_hebergements .selection_hebergement{
+
+    background-color: white;
+    width: 260px;
+    border-radius: 25px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#choix_hebergements div div p:first-child{
+
+    height: 120px;
+    margin: 0px;
+
+}
+
+#choix_hebergements img{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+
+}
+
+#choix_hebergements .text_image {
+
+    padding: 6px 8px;
+
+}
+
+#choix_hebergements .text_image p{
+
+    font-size: 15px;
+    margin: 5px 0px;
+
+}
+
+#choix_hebergements .text_image p span{
+
+        font-weight: bold;
+
+}
+
+#choix_hebergements .text_image > span{
+
+    font-size: 13px;
+    color: #0065FC;
+
+}
+
+#choix_hebergements .text_image > span .grey_star{
+
+    color: #F2F2F2;
+
+}
+
+#choix_hebergements .plus_hebergement{
+
+    margin: 35px 0 15px 0;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
 
 }
