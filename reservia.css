@@ -6,12 +6,13 @@
 body{
 
     font-family: 'Raleway', sans-serif;
+    margin: 0px;
 
 }
 
 #bloc_page{
 
-    margin: 0px 40px;
+    margin: 0px 50px;
 
 }
 
@@ -40,6 +41,7 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 100px;
+    margin-top: 7px;
 
 }
 
@@ -79,7 +81,7 @@ header .navigation{
 header .navigation:hover{
 
     color: rgb(45, 128, 253);
-    border-top: solid rgb(45, 128, 253);
+    border-top: solid rgb(45, 128, 253) 2px;
 
 }
 
@@ -173,19 +175,32 @@ form #bouton_recherche{
 
 }
 
+#filtres div:hover{
+
+    border: solid black;
+
+}
+
 #filtres i{
 
     color: #0065FC;
     background-color: #DEEBFF;
     padding: 15px;
     border-radius: 45px;
-    margin: -2px;
+    margin: -4px;
+
+}
+
+#filtres i:hover{
+
+    color: yellow;
+    background-color: black;
 
 }
 
 #filtres div p{
 
-    padding: 12px 15px 12px 12px;
+    padding: 12px 17px 12px 12px;
     margin: 0px;
     font-weight: bold;
 
@@ -198,7 +213,8 @@ form #bouton_recherche{
 #recherches > p:last-child{
 
     font-size: 15px;
-    margin: 30px 0;
+    margin-top: 30px;
+    margin-bottom: 0px;
 
 }
 
@@ -222,8 +238,7 @@ form #bouton_recherche{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 630px;
-    margin-bottom: 70px;
+    flex-wrap: wrap;
 
 }
 
@@ -236,6 +251,8 @@ form #bouton_recherche{
 
     background-color: #F2F2F2;
     padding: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -245,7 +262,7 @@ form #bouton_recherche{
 
 #choix_hebergements h1{
 
-    margin-top: 0px;
+    margin: 0px;
 
 }
 
@@ -254,15 +271,21 @@ form #bouton_recherche{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-between;
     width: 875px;
-    height: 450px;
+
+}
+
+#choix_hebergements .lien_image{
+
+    text-decoration: none;
+    color: black;
 
 }
 
 #choix_hebergements .selection_hebergement{
 
     background-color: white;
+    margin-top: 30px;
     width: 260px;
     border-radius: 25px;
     padding: 5px;
@@ -341,7 +364,7 @@ form #bouton_recherche{
     display: flex;
     flex-direction: column;
     padding: 40px;
-    justify-content: space-between;
+    margin-top: 30px;
 
 }
 
@@ -365,11 +388,19 @@ form #bouton_recherche{
 
 }
 
+#populaires .lien_image{
+
+    text-decoration: none;
+    color: black;
+
+}
+
 #populaires .selection_populaire{
 
     background-color: white;
     border-radius: 25px;
     padding: 5px;
+    margin-top: 30px;
     display: flex;
 
 }
@@ -432,6 +463,13 @@ form #bouton_recherche{
 
 /*Activités*/
 
+#activités{
+
+    margin-top: 70px;
+    min-width: 1425px;
+
+}
+
 #activités div{
 
     display: flex;
@@ -446,6 +484,13 @@ form #bouton_recherche{
 
 }
 
+#activités .lien_image{
+
+    text-decoration: none;
+    color: black;
+
+}
+
 #activités .activités_images{
 
     background-color: gray;
@@ -454,7 +499,7 @@ form #bouton_recherche{
 
 #activités p{
 
-    width: 340px;
+    width: 325px;
     margin: 0px;
 
 }
@@ -467,7 +512,7 @@ form #bouton_recherche{
 
 #activités .grande_image{
     
-    height: 500px;
+    height: 480px;
 
 }
 
@@ -479,7 +524,7 @@ form #bouton_recherche{
 
 #activités .petite_image{
     
-    height: 150px;
+    height: 135px;
 
 }
 
@@ -489,5 +534,25 @@ form #bouton_recherche{
     height: 100%;
     object-fit: cover;
     border-radius: 25px 25px 0 0;
+
+}
+
+
+
+
+/*footer*/
+
+footer{
+
+    background-color: #F2F2F2;
+    padding: 30px 50px;
+    margin-top: 50px;
+    display: flex;
+
+}
+
+footer div{
+
+    margin-right: 20%;
 
 }
