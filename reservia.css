@@ -168,16 +168,15 @@ form #bouton_recherche{
 
     display: flex;
     align-items: center;
-    margin-left: 12px;
-    margin-right: 12px;
+    margin: 0 15px 0 15px;
     border: solid 2px rgb(0, 0, 0, 0.1);
     border-radius: 45px;
 
 }
 
-#filtres div:hover{
+#filtres .filtre:hover{
 
-    border: solid black;
+    transform: scale(1.2);
 
 }
 
@@ -191,16 +190,9 @@ form #bouton_recherche{
 
 }
 
-#filtres i:hover{
-
-    color: yellow;
-    background-color: black;
-
-}
-
 #filtres div p{
 
-    padding: 12px 17px 12px 12px;
+    padding: 12px 20px 12px 15px;
     margin: 0px;
     font-weight: bold;
 
@@ -238,7 +230,6 @@ form #bouton_recherche{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
 
 }
 
@@ -254,6 +245,7 @@ form #bouton_recherche{
     margin-right: 40px;
     margin-top: 30px;
     border-radius: 25px;
+    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -271,7 +263,12 @@ form #bouton_recherche{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 875px;
+
+}
+
+#choix_hebergements > div a{
+
+    width: 31%;
 
 }
 
@@ -286,11 +283,11 @@ form #bouton_recherche{
 
     background-color: white;
     margin-top: 30px;
-    width: 260px;
     border-radius: 25px;
     padding: 5px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0 16px #0000002e;
 
 }
 
@@ -365,6 +362,7 @@ form #bouton_recherche{
     flex-direction: column;
     padding: 40px;
     margin-top: 30px;
+    width: 25%;
 
 }
 
@@ -402,6 +400,7 @@ form #bouton_recherche{
     padding: 5px;
     margin-top: 30px;
     display: flex;
+    box-shadow: 0 0 16px #0000002e;
 
 }
 
@@ -463,72 +462,88 @@ form #bouton_recherche{
 
 /*Activités*/
 
-#activités{
+#activites{
 
     margin-top: 70px;
-    min-width: 1425px;
 
 }
 
-#activités div{
+#activites div{
 
     display: flex;
     justify-content: space-between;
 
 }
 
-#activités div div{
+#activites > div{
+
+    height: 580px;
+
+}
+
+#activites div div{
 
     flex-direction: column;
     border-radius: 25px;
 
 }
 
-#activités .lien_image{
+#activites .lien_image{
 
     text-decoration: none;
     color: black;
 
 }
 
-#activités .activités_images{
+#activites .activites_images{
 
-    background-color: gray;
+    box-shadow: 0 0 16px #0000002e;
 
 }
+ 
+#activites p{
 
-#activités p{
-
-    width: 325px;
     margin: 0px;
 
 }
 
-#activités h2{
+#activites h2{
 
     margin: 20px;
 
 }
 
-#activités .grande_image{
-    
-    height: 480px;
+#activites > div > a, #activites > div > div{
+
+    width: 23%;
 
 }
 
-#activités .moyenne_image{
-    
-    height: 245px;
+#activites > div > a .activites_images{
+
+    height: 100%;
 
 }
 
-#activités .petite_image{
+#activites .grande_image{
     
-    height: 135px;
+    height: 100%;
 
 }
 
-#activités img{
+#activites .moyenne_image{
+    
+    height: 300px;
+
+}
+
+#activites .petite_image{
+    
+    height: 130px;
+
+}
+
+#activites img{
 
     width: 100%;
     height: 100%;
