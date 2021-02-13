@@ -114,7 +114,7 @@ form{
 
 }
 
-form i{
+form label i{
 
     background-color: #F2F2F2;
     padding: 15px;
@@ -144,6 +144,23 @@ form #bouton_recherche{
     font-size: 15px;
     font-weight: bold;
     border-radius: 0 15px 15px 0;
+
+}
+
+form button{
+
+    background-color: rgb(0, 101, 252);
+    height: 100%;
+    width: 55px;
+    border: none;
+    border-radius: 13px;
+    margin-left: -10px;
+
+}
+
+form button i{
+
+    color: white;
 
 }
 
@@ -617,6 +634,24 @@ footer p{
 
 
 
+/*RESPONSIVE BARRE DE RECHERCHE*/
+
+@media all and (min-width: 426px)
+{
+
+    /*RECHERCHES*/
+
+    form button{
+
+        display: none;
+
+    }
+
+}
+
+
+
+
 
 /*RESPONSIVE TABLET*/
 
@@ -747,7 +782,7 @@ footer p{
 
     #recherches{
 
-        margin: 0 20px;
+        margin: 0 25px;
 
     }
 
@@ -765,6 +800,13 @@ footer p{
     #recherches form #barre_recherche{
 
         width: 100%;
+        padding-right: 15px;
+
+    }
+
+    #recherches #bouton_recherche{
+
+        display: none;
 
     }
 
@@ -811,7 +853,7 @@ footer p{
     #choix_hebergements{
 
         border-radius: 0;
-        padding: 40px 20px;
+        padding: 40px 25px;
         margin: 0px;
         background-color: white;
         width: auto;
@@ -851,7 +893,7 @@ footer p{
     #populaires{
 
         border-radius: 0;
-        padding: 40px 20px;
+        padding: 40px 25px;
         width: auto;
 
     }
@@ -876,7 +918,7 @@ footer p{
     #activites{
 
         margin-top: 0;
-        padding: 0 20px;
+        padding: 0 25px;
 
     }
 
@@ -926,6 +968,7 @@ footer p{
     footer{
 
         flex-direction: column;
+        padding: 30px 25px;
 
     }
 
