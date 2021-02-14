@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8" />
@@ -14,14 +14,14 @@
 
             <header>
                 <p>
-                    <img src="images/logo/Reservia.svg" />
+                    <img src="images/logo/Reservia.svg" alt="logo Reservia" />
                 </p>
                 <nav class="navigation_1">
                     <ul>
                         <li><a href="#hebergements" class="navigation">Hébergements</a></li>
                         <li><a href="#activites" class="navigation">Activités</a></li>
                     </ul>
-                    <li><a href="#" class="inscription">S'inscrire</a></li>
+                    <a href="#" class="inscription">S'inscrire</a>
                 </nav>
                 <nav class="navigation_2">
                     <ul>
@@ -37,8 +37,8 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
 
-                <form action="" method="POST">
-                    <label for="rechercher"><i class="fas fa-map-marker-alt"></i></label>
+                <form action="traitement.php" method="POST">
+                    <label for="barre_recherche"><i class="fas fa-map-marker-alt"></i></label>
                     <input type="search" name="rechercher" id="barre_recherche" />
                     <input type="submit" value="Rechercher" id="bouton_recherche" />
                     <button><i class="fas fa-search"></i></button>
@@ -76,7 +76,7 @@
 
             </section>
 
-            <section id="hebergements">
+            <div id="hebergements">
 
                 <section id="choix_hebergements">
 
@@ -242,7 +242,7 @@
 
                 </section>
             
-            </section>
+            </div>
 
             <section id="activites">
 

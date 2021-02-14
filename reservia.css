@@ -43,7 +43,7 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    margin-top: 9px;
+    margin-top: 8px;
 
 }
 
@@ -55,9 +55,30 @@ header nav{
 
 }
 
-header ul{
+header .navigation_1 > .inscription{
+
+    padding-right: 0px;
+
+}
+
+header .navigation_1 ul{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+header .navigation_1 li{
 
     display: flex;
+
+}
+
+header .navigation_1 li a{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -1069,3 +1090,5 @@ footer p{
         margin: 10px 0;
 
     }
+
+}
