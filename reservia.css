@@ -43,7 +43,7 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    margin-top: 7px;
+    margin-top: 9px;
 
 }
 
@@ -51,6 +51,7 @@ header nav{
 
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 
 }
 
@@ -70,7 +71,7 @@ header a{
 
     text-decoration: none;
     padding: 47px 27px;
-    font-size: 15px;
+    font-size: 16px;
 
 }
 
@@ -83,7 +84,7 @@ header .navigation{
 header .navigation:hover{
 
     color: rgb(45, 128, 253);
-    border-top: solid rgb(45, 128, 253) 2px;
+    border-top: solid rgb(45, 128, 253) 3px;
 
 }
 
@@ -107,7 +108,7 @@ header .inscription{
 
 form{
 
-    height: 45px;
+    height: 50px;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
@@ -117,7 +118,7 @@ form{
 form label i{
 
     background-color: #F2F2F2;
-    padding: 15px;
+    padding: 17px;
     border-radius: 15px 0 0 15px;
 
 }
@@ -130,6 +131,8 @@ form #barre_recherche{
     font-weight: bold;
     padding-left: 15px;
     border: rgb(0, 0, 0, 0.1) solid 1px;
+    border-left: none;
+    border-right: none;
 
 }
 
@@ -144,17 +147,6 @@ form #bouton_recherche{
     font-size: 15px;
     font-weight: bold;
     border-radius: 0 15px 15px 0;
-
-}
-
-form button{
-
-    background-color: rgb(0, 101, 252);
-    height: 100%;
-    width: 55px;
-    border: none;
-    border-radius: 13px;
-    margin-left: -10px;
 
 }
 
@@ -634,7 +626,7 @@ footer p{
 
 
 
-/*RESPONSIVE BARRE DE RECHERCHE*/
+/*RESPONSIVE BUREAU*/
 
 @media all and (min-width: 426px)
 {
@@ -645,6 +637,17 @@ footer p{
 
         display: none;
 
+    }
+
+
+
+
+    /*HEADER*/
+
+    header .navigation_2, header > a{
+
+        display: none;
+    
     }
 
 }
@@ -769,11 +772,88 @@ footer p{
 
     /*HEADER*/
 
+    header .navigation_1{
+
+        display: none;
+    
+    }
+
     header{
 
-        flex-direction: column;
-        height: auto;
+        height: 120px;
+        margin: 25px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "logo inscription"
+        "navigation navigation"
+        ;
 
+    }
+
+    header p{
+
+        margin: 0 0 0 25px;
+        grid-area: logo;
+
+    }
+
+    header > a{
+
+        margin-right: 25px;
+        padding: 0px;
+        grid-area: inscription;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    header .navigation_2{
+
+        grid-area: navigation;
+
+    }
+
+    header .navigation_2 ul{
+
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    header .navigation_2 ul li{
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+    header .navigation_2 a{
+
+        width: 100%;
+        height: 40px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    header .navigation{
+
+        border-bottom: solid #F2F2F2 3px;
+
+    }
+
+    header .navigation:hover{
+
+        border-top: none;
+        border-bottom: solid rgb(45, 128, 253) 3px;
+    
     }
 
 
@@ -808,6 +888,18 @@ footer p{
 
         display: none;
 
+    }
+
+    #recherches form button{
+
+        background-color: rgb(0, 101, 252);
+        height: 100%;
+        width: 62px;
+        border: none;
+        border-radius: 13px;
+        margin-left: -10px;
+        font-size: 17px;
+    
     }
 
 
